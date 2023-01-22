@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<!--- ICS2O-My first PWA --->
+<!--- Assignment-6 --->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="My first PWA" />
+    <meta name="description" content="Assignment-6" />
     <meta name="keywords" content="mths, ics20" />
     <meta name="author" content="Ekaterina" />
     <meta name="theme-color" content="#FFFFFF" />
-    <title>GitHub page as PWA template</title>
+    <title>Assignment-6</title>
     <link
       rel="canonical"
       href="https://ekaterina-chernykh.github.io/Assignment-6/"
@@ -45,47 +45,16 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
   </head>
-  <title>My first PWA</title>
+  <title>Assignment-6</title>
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="./js/script.js"></script>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <main class="mdl-layout__content">
-        <h3>XXX</h3>
-        <h3>XXX</h3>
+        <h3>Random dog fact and image</h3>
         <p></p>
-        <img
-          src="./images/notebook-animation.svg"
-          alt="Computer"
-          width="25%"
-          height="25%"
-        />
-        <form action="#">
-          Height:
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="text"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="height"
-              aria-label="height"
-            />
-            <label class="mdl-textfield__label" for="length"></label>
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-          mm
-        </form>
-        <p></p>
-        <!-- Raised button with ripple -->
-        <button
-          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="myButtonClicked()"
-        >
-          CALCULATE
-        </button>
-        <!-- basic text -->
-        <p></p>
-        <div id="answer"></div>
+        <div id="dog-fact"></div>
+        <div id="dog-image"></div>
       </main>
     </div>
   </body>

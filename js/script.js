@@ -15,15 +15,24 @@ if (navigator.serviceWorker) {
   })
 }
 
-/**
- * This function displays an alert.
- */
-function myButtonClicked() {
-  // input
-  const height = parseFloat(document.getElementById("height").value)
+const getImage = async (URLAddress) => {
+  try {
+    const result = await fetch(URLAddress)
+    const jsonData = await result.json()
 
-  // process
-  const volume = 2
-  // output
-  document.getElementById("volume").innerHTML = "Volume is: " + volume + "mm³"
+    document.getElementById("dog-image").innerHTML =
+    '<img src="' +
+      jsonData.url +
+      '" alt="dog image" class="center"' +
+      '>'
+
+    const dogData = await fetch("https://dog-api.kinduff.com/api/facts")
+    const jsonDogData = await dogData.json()
+    document.getElementById("dog-fact").innerHTML = jsonDogData.facts
+
+  } catch (err) {
+    console.log(err)
+  }
 }
+
+getImage("https://random.dog/woof.json")
