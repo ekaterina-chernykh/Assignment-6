@@ -25,8 +25,9 @@ body {
   background-color: #345a98;
 }
 
-img {
-  float: right;
+#dog-image {
+  height: 50%;
+  width: 50%;
   margin-right: 15px;
 }
 
