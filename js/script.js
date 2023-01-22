@@ -23,7 +23,7 @@ const getImage = async (URLAddress) => {
     document.getElementById("dog-image").innerHTML =
     '<img src="' +
       jsonData.url +
-      '" alt="dog image" class="center"' +
+      '" alt="dog image" class="center" width="100" height="200"' +
       '>'
 
     const dogData = await fetch("https://dog-api.kinduff.com/api/facts")
